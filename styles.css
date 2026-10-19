@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column; /* stack the rows */
+  gap: 2px;
+  width: min(90vw, 90vh); /* grows with the window stays square*/
+  aspect-ratio: 1 / 1; /* always square */
+  margin: 0 auto; /* center horizontally */
+}
+
+.row {
+  display: flex; /* boxes sit side by side */
+  flex: 1; /* each row takes equal height */
+  gap: 4px;
+}
+
+.box {
+  flex: 1; /* each box takes equal width */
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
