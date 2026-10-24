@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: min(60vh, 800px);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  border: 1px solid black;
+  width: max(40px, 20px);
+  height: max(40px, 20px);
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: min(80vh, 800px);
+  }
+}
+
+@media (max-width: 600px) {
+  .col {
+    width: max(30px, 15px);
+    height: max(30px, 15px);
+  }
+}
