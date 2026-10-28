@@ -1,17 +1,21 @@
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
+  margin: 3rem;
   display: flex;
   flex-direction: column;
-  height: min(60vh, 800px);
+  height: min(80vh, 800px);
+  gap: 3px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+  gap: 3px;
 }
 
 .col {
@@ -20,9 +24,14 @@ body {
   height: max(40px, 20px);
 }
 
+.col:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .container {
-    height: min(80vh, 800px);
+    height: min(80vh, 600px);
   }
 }
 
