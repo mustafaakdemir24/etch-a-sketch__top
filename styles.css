@@ -1,5 +1,7 @@
 body {
+  margin: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -24,10 +26,20 @@ body {
   height: max(40px, 20px);
 }
 
-.col:hover {
-  background-color: #000;
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
   cursor: pointer;
 }
+
+/* .col:hover {
+  background-color: #000;
+  cursor: pointer;
+} */
 
 @media (max-width: 600px) {
   .container {
